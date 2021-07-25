@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F1"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Sign_up">
+
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/wchat1" />
+
+    <EditText
+        android:id="@+id/name_signup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editviewbackfround"
+        android:drawableStart="@drawable/ic_name"
+        android:hint="Name"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/email_signup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editviewbackfround"
+        android:drawableStart="@drawable/ic_email"
+        android:hint="Email"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/password_signup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editviewbackfround"
+        android:drawableStart="@drawable/ic_password"
+        android:hint="Password"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/already"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Already have account"
+        android:textAlignment="textEnd" />
+
+    <Button
+        android:id="@+id/bt_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonbackground"
+        android:backgroundTint="@color/white"
+        android:text="SIGN UP"
+        android:textAlignment="center"
+        android:textStyle="italic" />
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp" />
+
+
+    <TextView
+        android:id="@+id/tv_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sign Up with Phone"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textStyle="bold" />
+</LinearLayout>

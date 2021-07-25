@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F1"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Sign_in">
+
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/wchat1" />
+
+
+    <EditText
+        android:id="@+id/email_signin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editviewbackfround"
+        android:drawableStart="@drawable/ic_email"
+        android:hint="Email"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/password_signin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editviewbackfround"
+        android:drawableStart="@drawable/ic_password"
+        android:hint="Password"
+        android:password="true"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/backsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Click for Signup"
+        android:textAlignment="textEnd" />
+
+    <Button
+        android:id="@+id/bt_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonbackground"
+        android:text="SIGN IN"
+        android:textAlignment="center"
+        android:textStyle="italic" />
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googlesign_in_button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp" />
+
+
+    <TextView
+        android:id="@+id/signinsignupwithphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sign Up with Phone"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+</LinearLayout>

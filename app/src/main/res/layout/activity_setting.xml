@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity"
+    android:background="@color/green">
+
+
+    <ImageView
+        android:id="@+id/backarrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:tint="#ECE3E3"
+        android:src="@drawable/ic_left" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backarrow"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/linear1"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image_1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_person"
+            app:tint="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/plusimage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-30dp"
+            android:src="@drawable/ic_pluscircle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Username:"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/etusername"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:hint="Username"
+
+                android:textColorHint="@color/white"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="About:"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/etabout"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:hint="About"
+                android:textColorHint="@color/white"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Save"
+            android:id="@+id/savebutton"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_save"
+            android:layout_gravity="right"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/bg_linear"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/linear1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Privacy Policy"
+            android:paddingTop="20dp"
+            android:drawableLeft="@drawable/ic_privacy"
+            android:layout_marginLeft="50dp"
+
+            android:textStyle="bold"
+
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" About Us"
+            android:paddingTop="20dp"
+            android:drawableLeft="@drawable/ic_aboutus"
+            android:layout_marginLeft="50dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Invite a Friend"
+            android:layout_marginLeft="50dp"
+            android:drawableLeft="@drawable/ic_invite"
+            android:textStyle="bold"
+            android:paddingTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Notification"
+            android:layout_marginLeft="50dp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_notifications"
+            android:paddingTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Help"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_help"
+            android:layout_marginLeft="50dp"
+            android:paddingTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "90113446169",
+    "project_id": "vasudhaiva-99d3c",
+    "storage_bucket": "vasudhaiva-99d3c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90113446169:android:82e27874df197262a27588",
+        "android_client_info": {
+          "package_name": "com.apkglobal.vasudhaiva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90113446169-rr9q4l90qq6ontnsc579a110ns86q2ju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVr310kiwW02oRaNWuC3465T58PtUAV9g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "90113446169-rr9q4l90qq6ontnsc579a110ns86q2ju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
